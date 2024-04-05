@@ -1,0 +1,30 @@
+#include "sort.h"
+
+/**
+ * bubble_sort()- sorting, now with bubbles!
+ * @array: the array to sort
+ * @size: size of array
+ *
+ * Return: no return
+ */
+
+void bubble_sort(int *array, size_t size)
+{
+	size_t i, j;
+	int temp;
+
+	for (i = 0; i < size; i++)
+	{
+		for (j = 0; j < size - i - 1; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
+				temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+
+		}
+	}
+
+}
