@@ -28,7 +28,7 @@ void merge_sort(int *array, size_t size)
 
 void merge(int *array, int left, int mid, int right)
 {
-	int i, j, left_size, right_size, *left_array, *right_array;
+	int i, j, k, left_size, right_size, *left_array, *right_array;
 
 	left_size = mid - left + 1;
 	right_size = right - mid;
