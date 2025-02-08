@@ -42,9 +42,9 @@ void merge(int *array, int left, int mid, int right)
 		free(right_array);
 		return;
 	}
-	for (int i = 0; i < left_size; i++)
+	for(int i = 0; i < left_size; i++)
 		left_array[i] = array[left + i];
-	for (int j = 0; j < right_size; j++)
+	for(int j = 0; j < right_size; j++)
 		right_array[j] = array[mid + 1 + j];
 	printf("Merging...\n");
 	printf("[left] ");
