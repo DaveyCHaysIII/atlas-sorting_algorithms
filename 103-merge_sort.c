@@ -34,9 +34,9 @@ void merge(int *array, int left, int mid, int right)
 	right_size = right - mid;
 	k = left;
 
-	for(i = 0; i < left_size; i++)
+	for (i = 0; i < left_size; i++)
 		left_array[i] = array[left + i];
-	for(j = 0; j < right_size; j++)
+	for (j = 0; j < right_size; j++)
 		right_array[j] = array[mid + 1 + j];
 	printf("Merging...\n");
 	printf("[left]: ");
@@ -44,15 +44,16 @@ void merge(int *array, int left, int mid, int right)
 	printf("[right]: ");
 	print_array(right_array, right_size);
 	i = 0, j = 0, k = left;
-	for(; k <= right; k++)
+	for (; k <= right; k++)
 	{
-		if(i < left_size &&
+		if (i < left_size &&
 			(j >= right_size || left_array[i] <= right_array[j]))
 		{
 			array[k] = left_array[i];
 			i++;
 		}
-		else {
+		else
+		{
 			array[k] = right_array[j];
 			j++;
 		}
